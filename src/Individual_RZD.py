@@ -277,11 +277,10 @@ class RzdDatabase:
         ticket_sales_sheet.number_of_tickets = new_value
         self.save_database()
 
-
-# def del_sales(self):
-#     """Метод очистки ведомостей"""
-#     del self.database['ticket_sales_sheets'][list(self.database['ticket_sales_sheets'].keys())[0]]
-#     self.save_database()
+    def del_sales(self):
+        """Метод очистки ведомостей"""
+        del self.database['ticket_sales_sheets'][list(self.database['ticket_sales_sheets'].keys())[0]]
+        self.save_database()
 
 
 class Timer:
